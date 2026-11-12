@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arithmetic Operations</title>
+</head>
+<body style="background-color: rgb(149, 209, 223);
+      font-family: 'Times New Roman', serif;
+      font-size: 20px;
+      color: black;
+      background-image: url('https://media.istockphoto.com/id/2162577253/vector/math-design-layout-calculator-pencil-ruler-mathematical-accounts-and-symbols-on-squared.jpg?s=612x612&w=0&k=20&c=6XMyMkD8Jm41tHJWOGxTA1IIQB6MU-hgmOr5LrOCy9A=');
+      background-size: cover;">
+      
+    <h2 style="text-align: center;
+        font-family: 'Times New Roman', serif;
+        font-size: 40px;
+        color: tomato;">Arithmetic Operations</h2>
+
+    <script>
+        let a= Number(prompt("Enter the first number:"));
+        let b= Number(prompt("Enter the second number:"));
+
+        document.write("First number: " + a + "<br>");
+        document.write("Second number: " + b + "<br>");
+
+        document.write("Addition of the two numbers: " + (a + b) + "<br>");
+        document.write("Subtraction of the two numbers: " + (a - b) + "<br>");
+        document.write("Multiplication of the two numbers: " + (a * b) + "<br>");
+
+        if (b != 0) {
+            document.write("Division of the two numbers: " + (a / b) + "<br>");
+            document.write("Modulus of the two numbers: " + (a % b) + "<br>");
+        } else {
+            document.write("Division and Modulus of the two numbers: Cannot divide by zero<br>");
+        }
+    </script>
+</body>
+</html>

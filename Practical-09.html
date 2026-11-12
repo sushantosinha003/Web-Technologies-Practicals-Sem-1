@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Growing and Shrinking</title>
+</head>
+<body style="background-color: lightyellow;">
+    <h2 style="text-align: center;
+        font-size: 40px;
+        color: red;">Text Growing and Shrinking</h2>
+        
+    <p style="text-align: center;
+        font-size: 20px;
+        color: green;"
+        id="text">Avengers Doomsday releasing on December 17th.</p>
+    <script>
+        let size= 20;
+        let growing= true;
+
+        setInterval(function() {
+            if(growing) {
+                size++;
+                if(size >= 40) {
+                    growing= false;
+                }
+            } else {
+                size--;
+                if(size <= 20) {
+                    growing= true;
+                }
+            }
+
+            document.getElementById("text").style.fontSize= size + "px";
+        }, 100);
+    </script>
+</body>
+</html>
